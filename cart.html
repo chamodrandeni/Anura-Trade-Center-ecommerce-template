@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #88B05A;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Anura Trade Center</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="shop.html">Shop</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">Cart</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="cart.html" style="color:red"><span class="glyphicon glyphicon-shopping-cart"></span> 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Cart</h1>      
+    <p>Home / Cart</p>
+  </div>
+</div>
+
+<div class="container text-center"> 
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="pro-title">Product</th>
+				<th class="pro-price">Price</th>
+				<th class="pro-quantity">Quantity</th>
+				<th class="pro-subtotal">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="pro-title"><a href="#">Sony HD LED TV 32"</a></td>
+				<td class="pro-price"><span>Rs.45,999.00</span></td>
+				<td class="pro-quantity">
+					<div class="pro-qty"><input min="1" type="number" value="1"></div>
+				</td>
+				<td class="pro-subtotal"><span>Rs.45,999.00</span></td>
+			</tr>
+			<tr>
+				<td class="pro-title"><a href="#">Beko Built-In Oven</a></td>
+				<td class="pro-price"><span>Rs.96,299.00</span></td>
+				<td class="pro-quantity">
+					<div class="pro-qty"><input min="1" type="number" value="1"></div>
+				</td>
+				<td class="pro-subtotal"><span>Rs.96,299.00</span></td>
+			</tr>
+			<tr>
+				<td class="pro-title" colspan="3"><strong>Total</strong></td>
+				<td class="pro-title"><strong>Rs.142,298.00</strong></td>
+			</tr>
+			<tr>
+				<td class="pro-title" colspan="3"></td>
+				<td class="pro-title">
+					<a href="checkout.html" class="btn btn-success">Checkout</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Copyright © 2020 Anura Trade Center All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
